@@ -1,0 +1,52 @@
+.features .card {
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.features .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+.features .card span {
+  display: inline-block;
+  background-color: #1e40af;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  border-radius: 5px;
+}
+.features .card h4 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.features .card ul {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.features .card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.features .card ul li {
+  flex: 0 0 calc(33.33%-10px);
+  margin-right: 10px;
+}
+.features .card ul li:nth-child(3n + 1) {
+  clear: both; /* Para limpiar el float en cada tercer elemento */
+}
+.features .card a {
+  color: #fff;
+  transition: all 0.3 ease;
+}
+
+.features .card a:hover {
+  color: #1e40af;
+}

@@ -1,0 +1,90 @@
+.proyect-card {
+  padding: 1rem 0.5rem;
+  background-color: #27272a;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.proyect-card h4 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.proyect-img {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.proyect-img img {
+  min-width: 100%;
+}
+
+.proyect-tecnologias {
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+}
+.proyect-tecnologias i {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+  color: #ccc;
+}
+
+.proyect-tecnologias ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.proyect-tecnologias ul li {
+  display: inline;
+  margin-right: 3px;
+}
+
+.proyect-card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+
+.proyect-card .proyect-content {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.proyect-card p {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.proyect-card p i {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+.proyect-card p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.proyect-card .redireccion {
+  text-decoration: none; /* Para eliminar el subrayado */
+  color: #fff; /* Cambia el color del texto del enlace */
+  font-weight: bold; /* Hace que el texto sea más grueso */
+  text-align: center;
+}
+
+.proyect-card .redireccion:hover {
+  color: #1e40af;
+  border-color: #1e40af;
+}
+
+.proyect-card p a:hover {
+  color: #1e40af;
+}
