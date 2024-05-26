@@ -6,7 +6,7 @@ const Home = () => {
       <div className="content">
         <span className="blur"></span>
         <span className="blur"></span>
-        <h4>CREATE YOUR SITE LIKE A PRO</h4>
+        <h4>BUILD YOUR PROFESSIONAL SITE WITH EXPERTISE</h4>
         <h1>
           Hi, I'm <span>Clarks</span>, Web Developer
         </h1>

@@ -13,8 +13,8 @@ const Proyects = () => {
     <section className="container" id="Proyects">
       <h2 className="header">Proyects</h2>
       <p className="sub-header">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aut nulla
-        voluptatibus fuga doloremque.
+        Explore a selection of my latest projects, each meticulously crafted to
+        meet unique client needs and showcase my expertise in web development.
       </p>
       <div className="pricing">
         <Proyect
