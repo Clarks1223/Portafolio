@@ -1,9 +1,9 @@
 import Feature from '../../components/Feature/Feature';
 import './Features.css';
 const Features = () => {
-  const frontEnd = ['React'];
-  const backend = ['Expres'];
-  const dataBase = ['MongoDB', 'SQL', 'MySQL'];
+  const frontEnd = ['React','Bootstrap'];
+  const backend = ['Express'];
+  const dataBase = ['MongoDB', 'SQL-Server', 'MySQL'];
   const programming = [
     'C',
     'C++',
@@ -15,12 +15,12 @@ const Features = () => {
   ];
   const others = ['Git', 'Github', 'Node JS', 'Firebase', 'Scrum'];
   const learning = [
-    'Go',
-    'Django',
+    'Spring Boot',
     'Power BI',
     'Docker',
     'Amazon Web Services',
   ];
+  const QA = ['Maven','KarateLabs','Cucumber','Selenium']
   return (
     <section className="container" id="Features">
       <h2 className="header">FEATURES</h2>
@@ -32,14 +32,20 @@ const Features = () => {
         />
         <Feature icon="terminal-fill" titulo="Backend" tecnologias={backend} />
         <Feature
+          icon="code-line"
+          titulo="Programming"
+          tecnologias={programming}
+        />
+        <Feature
           icon="database-2-line"
           titulo="Data Bases"
           tecnologias={dataBase}
         />
+        
         <Feature
-          icon="code-line"
-          titulo="Programming"
-          tecnologias={programming}
+          icon="book-open-fill"
+          titulo="QA-Technologies"
+          tecnologias={QA}
         />
         <Feature icon="add-line" titulo="Others" tecnologias={others} />
         <Feature
@@ -47,6 +53,7 @@ const Features = () => {
           titulo="Learning"
           tecnologias={learning}
         />
+        
       </div>
     </section>
   );

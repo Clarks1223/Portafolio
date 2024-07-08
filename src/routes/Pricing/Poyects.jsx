@@ -5,9 +5,25 @@ import Portfolios from '../../assets/Portfolios.png';
 import Shakinah from '../../assets/Shakinah.png';
 import Weather from '../../assets/Weather.png';
 import Calculator from '../../assets/Calculator.png';
+import NobaPet from '../../assets/NovaPet.png';
 const Proyects = () => {
-  const SHAKINAH = ['REACT', 'Firebase'];
-  const PORT = ['Express', 'Nodemailer', 'Cloudinary', 'HandleBars', 'Node JS'];
+  const SHAKINAH = ['REACT', 'Node JS', 'Firebase', 'Bootstrap'];
+  const NOVAPET = [
+    'REACT',
+    'EXPRESS',
+    'Nodemailer',
+    'Cloudinary',
+    'Node JS',
+    'Bootstrap',
+  ];
+  const PORT = [
+    'Express',
+    'Nodemailer',
+    'Cloudinary',
+    'HandleBars',
+    'Node JS',
+    'Bootstrap',
+  ];
   const WEATHER = ['HTML', 'CSS', 'Java Script'];
   return (
     <section className="container" id="Proyects">
@@ -18,13 +34,19 @@ const Proyects = () => {
       </p>
       <div className="pricing">
         <Proyect
+          titulo="NovaPet"
+          tecnologias={NOVAPET}
+          despliegueURL="https://noba-pet.netlify.app/"
+          imagen={NobaPet}
+        />
+        <Proyect
           titulo="Shakinah"
           tecnologias={SHAKINAH}
           despliegueURL="https://paginawebymovil.web.app/"
           imagen={Shakinah}
         />
         <Proyect
-          titulo="Portafolios BOOTSTRAP"
+          titulo="Portafolios"
           tecnologias={PORT}
           gitURL="https://github.com/Clarks1223/PortafoliosWeb"
           despliegueURL="https://portafoliosweb.onrender.com/"
