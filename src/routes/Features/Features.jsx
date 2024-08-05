@@ -2,7 +2,7 @@ import Feature from '../../components/Feature/Feature';
 import './Features.css';
 const Features = () => {
   const frontEnd = ['React','Bootstrap'];
-  const backend = ['Express','Spring'];
+  const backend = ['Express','Spring Boot'];
   const dataBase = ['MongoDB', 'SQL-Server', 'MySQL'];
   const programming = [
     'C',
