@@ -6,7 +6,9 @@ import Shakinah from '../../assets/Shakinah.png';
 import Weather from '../../assets/Weather.png';
 import Calculator from '../../assets/Calculator.png';
 import NobaPet from '../../assets/NovaPet.png';
+import Movies from '../../assets/Movies.png';
 const Proyects = () => {
+  const MOVIES = ['REACT', 'OMDb API'];
   const SHAKINAH = ['REACT', 'Node JS', 'Firebase', 'Bootstrap'];
   const NOVAPET = [
     'REACT',
@@ -33,6 +35,13 @@ const Proyects = () => {
         meet unique client needs and showcase my expertise in web development.
       </p>
       <div className="pricing">
+        <Proyect
+          titulo="Clarks Movies"
+          tecnologias={MOVIES}
+          gitURL="https://github.com/Clarks1223/Movies-APP.git"
+          despliegueURL="https://clarksmovies.netlify.app/"
+          imagen={Movies}
+        />
         <Proyect
           titulo="NovaPet"
           tecnologias={NOVAPET}
