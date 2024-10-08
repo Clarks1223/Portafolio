@@ -1,24 +1,20 @@
 import Feature from '../../components/Feature/Feature';
 import './Features.css';
 const Features = () => {
-  const frontEnd = ['React','Bootstrap'];
-  const backend = ['Express','Spring Boot'];
-  const dataBase = ['MongoDB', 'SQL-Server', 'MySQL'];
+  const frontEnd = ['React', 'React-Ntive', 'HTML', 'CSS', 'Bootstrap'];
+  const backend = ['Express', 'Spring Boot', 'Node.JS', 'PHP'];
+  const dataBase = ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase'];
   const programming = [
     'C',
     'C++',
     'Java',
     'Python',
-    'HTML',
-    'CSS',
-    'Java Script',
+    'Typescript',
+    'JavaScript',
   ];
-  const others = ['Git', 'Github', 'Node JS', 'Firebase', 'Scrum'];
-  const learning = [
-    'Docker',
-    'Amazon Web Services',
-  ];
-  const QA = ['Maven','KarateLabs','Cucumber','Selenium']
+  const others = ['Git', 'Github', 'Scrum', 'Figma', 'Jira'];
+  const learning = ['Docker', 'Amazon Web Services'];
+  const QA = ['Postman', 'KarateLabs', 'Cucumber', 'Selenium'];
   return (
     <section className="container" id="Features">
       <h2 className="header">FEATURES</h2>
@@ -39,7 +35,7 @@ const Features = () => {
           titulo="Data Bases"
           tecnologias={dataBase}
         />
-        
+
         <Feature
           icon="book-open-fill"
           titulo="QA-Technologies"
@@ -51,7 +47,6 @@ const Features = () => {
           titulo="Learning"
           tecnologias={learning}
         />
-        
       </div>
     </section>
   );
