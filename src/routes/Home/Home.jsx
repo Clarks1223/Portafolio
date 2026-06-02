@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import profileImage from '../../assets/PabloUchuari.jpeg';
 import './Home.css';
 
@@ -5,12 +6,20 @@ const RESUME_URL =
   'https://drive.google.com/file/d/1uEr03aa9CIF5Ku2KGXLgjMdJyPBwrSpM/view?usp=sharing';
 
 export function Home() {
+  const heroImageRef = useRef(null);
+
+  useEffect(() => {
+    if (heroImageRef.current) {
+      heroImageRef.current.setAttribute('fetchpriority', 'high');
+    }
+  }, []);
+
   return (
     <header id="home" className="hero container">
       <span className="blur" aria-hidden="true" />
       <span className="blur" aria-hidden="true" />
       <div className="hero__content">
-        <h4>WELCOME TO MY PROFESSIONAL SITE</h4>
+        <p className="hero__eyebrow">WELCOME TO MY PROFESSIONAL SITE</p>
         <h1>
           Hi, I&apos;m <span>Clarks</span>, Web Developer
         </h1>
@@ -39,7 +48,15 @@ export function Home() {
         </a>
       </div>
       <div className="hero__image">
-        <img src={profileImage} alt="Portrait of Pablo Clarks" loading="lazy" />
+        <img
+          ref={heroImageRef}
+          src={profileImage}
+          alt="Portrait of Pablo Clarks"
+          loading="eager"
+          decoding="async"
+          width="600"
+          height="600"
+        />
       </div>
     </header>
   );

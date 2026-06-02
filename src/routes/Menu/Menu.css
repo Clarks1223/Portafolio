@@ -19,56 +19,41 @@ nav.nav--scrolled {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
-.nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.nav-logo__mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  background: var(--color-primary);
-  color: var(--color-text);
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3rem;
-  margin: 0;
+  gap: 0.75rem;
+  margin: 0 0 0 auto;
   padding: 0;
 }
 
 .link a {
   position: relative;
-  padding-bottom: 0.75rem;
+  display: inline-block;
+  padding: 0.55rem 1.15rem;
   color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
   text-decoration: none;
+  transition: background-color var(--transition), border-color var(--transition),
+    color var(--transition), transform var(--transition);
 }
 
-.link a::after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 0;
-  bottom: 0;
-  left: 0;
+.link a:hover,
+.link a:focus-visible {
   background-color: var(--color-primary);
-  transition: width var(--transition);
+  border-color: var(--color-primary);
+  color: var(--color-text);
+  transform: translateY(-1px);
 }
 
-.link a:hover::after,
-.link a:focus-visible::after {
-  width: 70%;
+.link a[aria-current='page'] {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .menu-hamburger {

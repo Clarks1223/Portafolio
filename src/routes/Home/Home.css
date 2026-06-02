@@ -20,11 +20,13 @@
   text-wrap: balance;
 }
 
-.hero__content h4 {
+.hero__eyebrow {
   margin-bottom: 1rem;
   color: var(--color-text-muted);
   font-size: 1rem;
   font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.05em;
 }
 
 .hero__content h1 {

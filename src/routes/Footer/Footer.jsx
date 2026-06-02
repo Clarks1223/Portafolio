@@ -9,11 +9,11 @@ export function Footer() {
       <span className="blur" aria-hidden="true" />
       <span className="blur" aria-hidden="true" />
       <div className="footer-column">
-        <h4>LOCATION</h4>
+        <h2 className="footer-column__title">Location</h2>
         <p>{CONTACT_INFO.location}</p>
       </div>
       <div className="footer-column">
-        <h4>AROUND THE WEB</h4>
+        <h2 className="footer-column__title">Around the web</h2>
         <div className="footer-socials">
           {SOCIAL_LINKS.map((link) => (
             <a
@@ -29,7 +29,7 @@ export function Footer() {
         </div>
       </div>
       <div className="footer-column">
-        <h4>Contact</h4>
+        <h2 className="footer-column__title">Contact</h2>
         <p>Email: {CONTACT_INFO.email}</p>
         <p>Whatsapp: {CONTACT_INFO.whatsapp}</p>
       </div>

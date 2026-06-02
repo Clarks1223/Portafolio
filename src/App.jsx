@@ -8,8 +8,11 @@ import './App.css';
 function App() {
   return (
     <div className="app">
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
       <Menu />
-      <main className="app__main">
+      <main id="main-content" className="app__main" tabIndex={-1}>
         <Home />
         <Projects />
         <Skills />

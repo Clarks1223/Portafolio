@@ -7,7 +7,7 @@ export function SkillCard({ icon, title, technologies }) {
       <span className="skill-card__icon" aria-hidden="true">
         <i className={`ri-${icon}`} />
       </span>
-      <h4 className="skill-card__title">{title}</h4>
+      <h3 className="skill-card__title">{title}</h3>
       <ul className="skill-card__tech-list">
         {technologies.map((tech) => (
           <li key={tech}>{tech}</li>

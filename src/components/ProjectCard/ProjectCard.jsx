@@ -3,11 +3,18 @@ import './ProjectCard.css';
 
 const EXTERNAL_LINK_REL = 'noopener noreferrer';
 
-export function ProjectCard({ title, technologies, repoUrl, liveUrl, image, imageAlt }) {
+export function ProjectCard({
+  title,
+  technologies,
+  repoUrl = null,
+  liveUrl,
+  image,
+  imageAlt,
+}) {
   return (
     <article className="project-card">
       <div className="project-card__content">
-        <h4 className="project-card__title">{title}</h4>
+        <h3 className="project-card__title">{title}</h3>
         <div className="project-card__image">
           <img src={image} alt={imageAlt} loading="lazy" />
         </div>
@@ -47,10 +54,6 @@ ProjectCard.propTypes = {
   liveUrl: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   imageAlt: PropTypes.string.isRequired,
-};
-
-ProjectCard.defaultProps = {
-  repoUrl: null,
 };
 
 export default ProjectCard;
