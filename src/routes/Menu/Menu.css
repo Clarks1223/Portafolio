@@ -1,46 +1,58 @@
-img {
-  width: 100%;
-  display: flex;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #18181b;
-}
-
 nav {
-  max-width: 1200px;
+  height: var(--nav-height);
+  max-width: var(--container-max);
   margin: auto;
-  padding: 1rem 2rem;
+  padding: 0 var(--space-inline);
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 1.5rem;
   position: fixed;
   z-index: 100;
-  left: 0;
-  right: 0;
+  inset: 0 0 auto 0;
+  background-color: transparent;
+  transition: background-color var(--transition);
+}
+
+nav.nav--scrolled {
+  background-color: var(--color-bg);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 .nav-logo {
-  max-width: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nav-logo__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--color-primary);
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
 }
 
 .link a {
   position: relative;
   padding-bottom: 0.75rem;
-  color: #fff;
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 .link a::after {
@@ -50,9 +62,44 @@ nav {
   width: 0;
   bottom: 0;
   left: 0;
-  background-color: #1d4ed8;
-  transition: all 0.3s ease;
+  background-color: var(--color-primary);
+  transition: width var(--transition);
 }
-.link a:hover::after {
+
+.link a:hover::after,
+.link a:focus-visible::after {
   width: 70%;
+}
+
+.menu-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.menu-hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-text);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.menu-hamburger--open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-hamburger--open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-hamburger--open span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
 }

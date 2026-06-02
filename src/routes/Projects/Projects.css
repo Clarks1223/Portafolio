@@ -1,0 +1,14 @@
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-text-muted);
+  text-wrap: balance;
+}
+
+.projects-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}

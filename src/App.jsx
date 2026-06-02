@@ -1,25 +1,21 @@
+import { Menu } from './routes/Menu/Menu';
+import { Home } from './routes/Home/Home';
+import { Projects } from './routes/Projects/Projects';
+import { Skills } from './routes/Skills/Skills';
+import { Footer } from './routes/Footer/Footer';
 import './App.css';
-import Menu from './routes/Menu/Menu';
-import Home from './routes/Home/Home';
-import Features from './routes/Features/Features';
-import Proyects from './routes/Pricing/Poyects';
-import Footer from './routes/Footer/Footer';
+
 function App() {
   return (
-    <div>
-      <div className="Menu-nav">
-        <Menu></Menu>
-      </div>
-      <main>
-        <br></br>
-        <Home></Home>
-        <Proyects></Proyects>
-        <Features></Features>
+    <div className="app">
+      <Menu />
+      <main className="app__main">
+        <Home />
+        <Projects />
+        <Skills />
       </main>
-      <div>
-        <Footer></Footer>
-      </div>
-      <p className="c">Crafted by Clarks</p>
+      <Footer />
+      <p className="app__credit">Crafted by Clarks</p>
     </div>
   );
 }
